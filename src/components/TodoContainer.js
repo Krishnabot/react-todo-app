@@ -57,16 +57,19 @@ addTodoItem = title => {
     todos: [...this.state.todos, newTodo]
   });
 };
-  render() {
-    return (
-      <div>
+render() {
+  return (
+    <div className="container">
+      <div className="inner">
         <Header />
-<TodosList
-  todos={this.state.todos}
-  handleChangeProps={this.handleChange}
-  deleteTodoProps={this.delTodo}
-/>
+        <InputTodo addTodoProps={this.addTodoItem} />
+        <TodosList
+          todos={this.state.todos}
+          handleChangeProps={this.handleChange}
+          deleteTodoProps={this.delTodo}
+        />
       </div>
-    );
-  }
+    </div>
+  );
+}
 export default TodoContainer;

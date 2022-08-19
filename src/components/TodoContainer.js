@@ -1,22 +1,23 @@
-import React from "react";
-import TodosList from "./TodosList";
+import React from 'react';
+import TodosList from './TodosList';
+import Header from './Header';
 
 class TodoContainer extends React.Component {
   state = {
     todos: [
       {
         id: 1,
-        title: "Setup development environment",
+        title: 'Setup development environment',
         completed: true,
       },
       {
         id: 2,
-        title: "Develop website and add content",
+        title: 'Develop website and add content',
         completed: false,
       },
       {
         id: 3,
-        title: "Deploy to live server",
+        title: 'Deploy to live server',
         completed: false,
       },
     ],
@@ -24,11 +25,10 @@ class TodoContainer extends React.Component {
 
   render() {
     return (
-      <ul>
-        {this.state.todos.map((todo) => (
-          <li>{todo.title}</li>
-        ))}
-      </ul>
+      <div>
+        <Header />
+        <TodosList todos={this.state.todos} />
+      </div>
     );
   }
 }

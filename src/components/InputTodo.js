@@ -1,26 +1,28 @@
 import React, { Component } from "react";
-import InputTodo from "./InputTodo";
 
 class InputTodo extends Component {
-  state = {
-    title: "",
-  };
+this.setState({
+  [e.target.name]: e.target.value,
+})
+
   onChange = (e) => {
     this.setState({
-      title: e.target.value,
+      [e.target.name]: e.target.value,
     });
   };
+
   render() {
     return (
-      <div>
-        <Header />
-        <InputTodo />
-        <TodosList
-          todos={this.state.todos}
-          handleChangeProps={this.handleChange}
-          deleteTodoProps={this.delTodo}
+      <form>
+        <input
+          type="text"
+          placeholder="Add todo..."
+          value={this.state.title}
+          name="title"
+          onChange={this.onChange}
         />
-      </div>
+        <button>Submit</button>
+      </form>
     );
   }
 }

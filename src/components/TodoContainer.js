@@ -37,16 +37,26 @@ this.setState(prevState => {
   }
 })
 
+delTodo = id => {
+  this.setState({
+    todos: [
+      ...this.state.todos.filter(todo => {
+        return todo.id !== id;
+      })
+    ]
+  });
+};
+
   render() {
     return (
       <div>
         <Header />
-        <TodosList
-          todos={this.state.todos}
-          handleChangeProps={this.handleChange}
-        />
+<TodosList
+  todos={this.state.todos}
+  handleChangeProps={this.handleChange}
+  deleteTodoProps={this.delTodo}
+/>
       </div>
     );
   }
-}
 export default TodoContainer;

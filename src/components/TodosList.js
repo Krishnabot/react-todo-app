@@ -8,9 +8,8 @@ class TodosList extends React.Component {
         <TodoItem
           key={todo.id}
           todo={todo}
-          handleChangeProps={props.handleChangeProps}
-          deleteTodoProps={props.deleteTodoProps}
-          setUpdate={props.setUpdate}
+          handleChangeProps={this.props.handleChangeProps}
+          deleteTodoProps={this.props.deleteTodoProps}
         />
       ))}
     </ul>;

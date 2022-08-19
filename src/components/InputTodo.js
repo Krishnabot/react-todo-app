@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+x
 class InputTodo extends Component {
 this.setState({
   [e.target.name]: e.target.value,
@@ -11,10 +11,18 @@ this.setState({
     });
   };
 
+handleSubmit = e => {
+  e.preventDefault();
+  this.props.addTodoProps(this.state.title);
+  this.setState({
+    title: ""
+  });
+};
+
   render() {
     return (
-      <form>
-        <input
+<form onSubmit={this.handleSubmit}>
+          <input
           type="text"
           placeholder="Add todo..."
           value={this.state.title}

@@ -1,3 +1,7 @@
+/* eslint-disable react/button-has-type */
+/* eslint-disable no-alert */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import { FaPlusCircle } from 'react-icons/fa';
 
@@ -36,9 +40,7 @@ const InputTodo = (props) => {
         onChange={onChange}
       />
       <button className="input-submit">
-        <FaPlusCircle
-          style={{ color: 'darkcyan', fontSize: '20px', marginTop: '2px' }}
-        />
+        <FaPlusCircle style={{ color: 'darkcyan', fontSize: '20px', marginTop: '2px' }} />
       </button>
     </form>
   );

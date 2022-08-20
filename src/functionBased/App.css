@@ -69,6 +69,8 @@ body {
   text-decoration: underline;
 }
 
+/* sidebar Nav */
+
 .navBar {
   position: relative;
 }
@@ -79,6 +81,8 @@ body {
   top: 40px;
   z-index: 10;
   cursor: pointer;
+
+  /* addition */
   background: transparent;
   border: none;
   outline: none;
@@ -116,6 +120,8 @@ a {
 .menuNav li:first-child {
   margin-top: 7rem;
 }
+
+/* about page */
 
 .about__content {
   padding: 8rem 40px;

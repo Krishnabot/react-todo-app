@@ -58,6 +58,10 @@ componentDidUpdate(prevProps, prevState) {
     localStorage.setItem("todos", temp)
   }
 }
+componentWillUnmount() {
+  console.log("Cleaning up...")
+}
+
 
 render() {
   return (

@@ -3,13 +3,13 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
-import Header from './Header';
-import InputTodo from './InputTodo';
-import TodosList from './TodosList';
+import Header from './Header.js';
+import InputTodo from './InputTodo.js';
+import TodosList from './TodosList.js';
 
-import About from '../pages/About';
-import NotMatch from '../pages/NotMatch';
-import Navbar from './Navbar';
+import About from '../pages/About.js';
+import NotMatch from '../pages/NotMatch.js';
+import Navbar from './Navbar.js';
 
 const TodoContainer = () => {
   const [todos, setTodos] = useState(getInitialTodos());

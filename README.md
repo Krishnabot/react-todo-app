@@ -1,35 +1,66 @@
-## React Tutorial from Scratch– A Step-by-Step Guide (2021 Update)
+# Math-Magician App
+A Minimalist yet powerful todo-app built with react
 
-This repo holds all the code for a React todos application. You can follow the step by step [guide to building the awesome project here](https://ibaslogic.com/react-tutorial-for-beginners/).
 
-## [Click to See the Todos App](https://ibaslogic.github.io/react-todo-project/)
+## Built With
 
-The code is available in the `src` folder. In there, you’ll see two folders named `classBased` and `functionBased` holding the class component and function component code respectively.
+- React [Create React App](https://github.com/facebook/create-react-app)
 
-### Clone the project
+## Project SnapShot
+![To do SnapShot](https://user-images.githubusercontent.com/40334904/185754190-f649b560-2c99-4cf4-a88c-920b38bedc6d.png")
 
-You can download or clone this project by running this command from your terminal:
+## Live Demo 
 
-```
-git clone https://github.com/Ibaslogic/react-todo-app
-```
+Not Available Yet
 
-This will create a directory in the name of the project folder.
+## Getting Started 
 
-Once you have the project files and folders bootstrapped, open it with your text editor.
+To Clone The Repository in your Local Machine, run:
 
-Next, switch inside the project directory and run:
+#### `https://github.com/Krishnabot/react-todo-app.git`
 
-```
-npm install
-```
+In the project directory, you can run:
 
-This will install all the necessary dependencies in the local `node_modules` folder.
+#### `npm start`
 
-Finally, start your development server by running:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-```
-npm start
-```
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-You should see the app in your browser address bar at [http://localhost:3000](http://localhost:3000)
+#### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+#### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+The app is ready to be deployed!
+
+
+## Author
+
+👤 **Krishna**
+
+- GitHub: [@Krishnabot](https://github.com/Krishnabot)
+- Twitter: [@last_matrix](https://twitter.com/last_matrix)
+- LinkedIn: [@krishnabot](https://www.linkedin.com/in/krishnabot/)
+- HackerRank [@KrishnaBot](https://www.hackerrank.com/KrishnaBot)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Krishnabot/react-todo-app/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+- [Ibas majid](https://ibaslogic.com/react-tutorial-for-beginners/)
